@@ -1,0 +1,20 @@
+'''take a string as a input and find out the most frequent character and its frequency from input.
+Remove all spaces on it.'''
+
+from collections import Counter
+
+# Take user input
+input_string = input("Enter a string: ") #Vishruti
+
+# Remove spaces
+cleaned_string = input_string.replace(" ", "")
+
+# Count character frequency
+char_count = Counter(cleaned_string)#Counter({'i': 2, 'V': 1, 's': 1, 'h': 1, 'r': 1, 'u': 1, 't': 1})
+
+# Find the most frequent character
+most_common_char, frequency = char_count.most_common(1)[0]
+
+print(f"Most frequent character: '{most_common_char}'")
+print(f"Frequency: {frequency}")
+

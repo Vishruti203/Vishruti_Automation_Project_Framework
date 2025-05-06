@@ -1,0 +1,43 @@
+print("================================ Example 1 ===============================================")
+
+# Input string
+input_string = "example string"
+
+# Initialize an empty dictionary
+char_count = {}
+
+# Count characters using a loop
+for char in input_string:
+    if char in char_count:
+        char_count[char] += 1
+    else:
+        char_count[char] = 1
+
+# Display result
+print(char_count)
+
+print("================================ Example 2 ===============================================")
+
+a = "Vishruti shihora"
+dict = {}
+
+for i in a:
+    if i in dict:
+        dict[i] +=1
+    else:
+        dict[i] = 1  
+
+print(dict)
+
+print("================================ Example 3 ===============================================")
+
+from collections import Counter
+
+# Input string
+input_string = "example string"
+
+# Count characters
+char_count = Counter(input_string)
+
+# Display result
+print(char_count)
